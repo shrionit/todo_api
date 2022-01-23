@@ -13,6 +13,7 @@ credentials.json
 
 # Distribution / packaging
 migrations/
+staticfiles/
 .vscode
 .Python
 build/
