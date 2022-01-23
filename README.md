@@ -6,11 +6,11 @@ A demo todo api
 
 ## Swagger*
 - swagger apis
-	-- **[todo-api4]/swagger**
-	-- **[todo-api4]/redoc**
+	- **[todo-api4]/swagger**
+	- **[todo-api4]/redoc**
 - authorization:
-	-- Use **auth** (*/auth/token*) to obtain {*access_token*}
-	-- Manually add `Bearer ` prefix to {*access_token*} when authorizing.
+	- Use **auth** (*/auth/token*) to obtain {*access_token*}
+	- Manually add `Bearer ` prefix to {*access_token*} when authorizing.
 
 ## Installation
 Better create an env with `python==3.9`
