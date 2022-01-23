@@ -1,4 +1,4 @@
 release: python manage.py makemigrations --no-input
 release: python manage.py migrate --no-input
 
-web: gunicorn invoicegen_backend.wsgi --log-file -
+web: gunicorn todo_project.wsgi --log-file -
