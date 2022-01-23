@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'todo_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'old': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # },
-    "default": {
+    f"{'default' if DEBUG else 'old'}": {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    f"{'prod' if DEBUG else 'default'}": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get('DBNAME', 'mydatabase'),
         "USER": os.environ.get('DBUSERNAME', "postgres"),
